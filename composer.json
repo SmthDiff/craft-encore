@@ -1,0 +1,45 @@
+{
+  "name": "smthdiff/craft-encore",
+  "description": "Helper plugin for Webpack Encode in Craft CMS templates",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "license": "MIT",
+  "keywords": [
+    "craft",
+    "craft3",
+    "craftcms",
+    "craft-plugin",
+    "webpack",
+    "webpack-encore"
+  ],
+  "authors": [
+    {
+      "name": "SmthDiff",
+      "email": "engineering@smthdiff.com",
+      "homepage": "https://www.smthdiff.com"
+    }
+  ],
+  "require": {
+    "craftcms/cms": "^3.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SmthDiff\\Encore\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "SmthDiff Encore",
+    "handle": "encore",
+    "schemaVersion": "1.0.0",
+    "developerEmail": "engineering@smthdiff.com",
+    "documentationUrl": "https://github.com/smthdiff/craft-encore/blob/master/README.md",
+    "changelogUrl": "https://raw.githubusercontent.com/smthdiff/craft-encore/master/CHANGELOG.md",
+    "downloadUrl": "https://github.com/smthdiff/craft-encore/archive/master.zip",
+    "hasCpSettings": true,
+    "hasCpSection": false,
+    "components": {
+      "encore": "SmthDiff\\Encore\\Services\\EncoreService"
+    },
+    "class": "SmthDiff\\Encore\\Encore"
+  }
+}
